@@ -25,7 +25,7 @@ int main(void)
 
 	printf("Size of a long: %d byte(s)\n", sizeof(not_so_long));
 
-	printf("Size of a long long: %d byte(s)\n", sizeof(so_long));
+	printf("Size of a long long int: %d byte(s)\n", sizeof(so_long));
 
 	printf("Size of a float: %d byte(s)\n", sizeof(point));
 
