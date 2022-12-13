@@ -19,15 +19,15 @@ int main(void)
 
 	float point = 783.678;
 
-	printf("Size of char: %d byte(s)", sizeof(s));
+	printf("Size of a char: %d byte(s)\n", sizeof(s));
 
-	printf("Size of int: %d byte(s)", sizeof(one));
+	printf("Size of an int: %d byte(s)\/", sizeof(one));
 
-	printf("Size of long: %d byte(s)", sizeof(not_so_long));
+	printf("Size of a long: %d byte(s)\n", sizeof(not_so_long));
 
-	printf("Size of long long: %d byte(s)", sizeof(so_long));
+	printf("Size of a long long: %d byte(s)\n", sizeof(so_long));
 
-	printf("Size of float: %d byte(s)", sizeof(point));
+	printf("Size of a float: %d byte(s)\n", sizeof(point));
 
 	return (0);
 }
