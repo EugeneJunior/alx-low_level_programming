@@ -1,14 +1,19 @@
+#include <string.h>
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - This prints lower case alphabets to stdou
  *
- * Return: Always 0 (succes)
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
+	char str[] = "abcdefghijklmnopqrstuvwxyz";
 
-	return (0);
+	int i;
+
+	for (i = 0; i < (int) strlen(str); i++)
+		_putchar(str[i]);
+
+	_putchar('\n');
 
 }

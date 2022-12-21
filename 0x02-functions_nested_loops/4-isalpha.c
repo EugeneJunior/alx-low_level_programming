@@ -1,35 +1,19 @@
+#include <ctype.h>
 #include "main.h"
+
 /**
- * main - Entry point
+ * _isalpha - logs upper and lower case letters to stdout
+ * @c: input parameter
  *
+ * Return: return 1 if c is alpha and 0 otherwise
  *
- *
- * Return: Always 0 (success)
  */
 
-int main(void)
+int _isalpha(int c)
 {
-	int r;
-
-	r = _isalpha('H');
-
-	_putchar(r + '0');
-
-	r = _isalpha('o');
-
-	_putchar(r + '0');
-
-	r = _isalpha(108);
-
-	_putchar(r + '0');
-
-	r = _isalpha(';');
-
-	_putchar(r + '0');
-
-	_putchar('\n');
-
-	return (0);
-
+	if (isalpha(c))
+		return (1);
+	else
+		return (0);
 
 }

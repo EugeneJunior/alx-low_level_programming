@@ -1,25 +1,17 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 /**
- * main - entry point
+ * _abs - prints the absolute value to stdout
+ * @n: input parameter
  *
+ * Return: returns the absolute value
  *
- * Return: Always 0 (success)
  */
 
-int main(void)
+int _abs(int n)
 {
-	int r;
+	return (abs(n));
 
-	r = _abs(-1);
-	printf("%d\n", r);
-	r = _abs(0);
-	printf("%d\n", r);
-	r = _abs(1);
-	printf("%d\n", r);
-	r = _abs(-98);
-	printf("%d\n", r);
-
-	return (0);
 
 }
+
