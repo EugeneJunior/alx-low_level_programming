@@ -10,22 +10,34 @@
 
 int add(int a, int b)
 {
-	if (a != 0 || b != 0)
+	int res = 0;
+
+	if (a != 0)
 	{
-		return (a + b);
-	}
-	else if ( a == 0 && b == 0)
+		if (b == 0)
+		{
+			res += a;
+
+			return (res);
+		}
+		else
+		{	res += (a + b);
+			return (res);
+	} }
+	else
 	{
-		return (0);
+		if (b == 0)
+		{
+			res += b;
+			return (res);
+		}
+		else
+		{
+			res += b;
+			return (res);
+		}
 	}
-	else if (a == 0 && b != 0)
-	{
-		return (b);
-	}
-	else if (a != 0 && b == 0)
-	{
-		return (a);
-	}
-	
+
 	exit(0);
+
 }
