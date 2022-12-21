@@ -1,20 +1,20 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 /**
- * main - entry point of code
+ * add - adds two integers
+ * @a: first input parameter
+ * @b: second input parameter
  *
- * Return: Always 0 (success)
+ * Return: returns the result of a + b
  */
 
-int main(void)
+int add(int a, int b)
 {
-	int n;
-
-	n = add(89, 9);
-
-	printf("%d\n", n);
-
-	return (0);
-
-
+	if (a){
+		if (b){
+			return (a + b);
+		}
+	}
+	
+	exit(0);
 }

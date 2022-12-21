@@ -13,7 +13,7 @@ void print_to_98(int n)
 
 	if ((n >= 0) || (n < 0))
 	{
-		if (n < m)
+		if (n <= m)
 		{
 			for (i = n; i < m + 1; i++)
 			{
@@ -35,11 +35,22 @@ void print_to_98(int n)
 						_putchar(' '); }
 					else
 					{
+					if ((i / -10) < 10)
+					{
 						_putchar(45);
 						_putchar((i / -10) + '0');
 						_putchar((i / -1) % 10 + '0');
 						_putchar(',');
-						_putchar(' '); } } } 
+						_putchar(' '); }
+					else
+					{
+					if ((i / -100) < 10)
+					{	_putchar(45);
+						_putchar((i / -100) + '0');
+						_putchar((i / -10) % 10 + '0');
+						_putchar((i / -1) % 10 + '0');
+						_putchar(',');
+						_putchar(' ');} } } } } 
 				else
 				{
 					if (i != 98){
