@@ -10,10 +10,21 @@
 
 int add(int a, int b)
 {
-	if (a){
-		if (b){
-			return (a + b);
-		}
+	if (a != 0 || b != 0)
+	{
+		return (a + b);
+	}
+	else if ( a == 0 && b == 0)
+	{
+		return (0);
+	}
+	else if (a == 0 && b != 0)
+	{
+		return (b);
+	}
+	else if (a != 0 && b == 0)
+	{
+		return (a);
 	}
 	
 	exit(0);
