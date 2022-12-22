@@ -12,15 +12,11 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	size_t size_s1 = strlen(s1);
+	int res;
 
-	if (s1 < s2)
-		return (15 * -1);
-	else if (s1 > s2)
-		return (15);
-	else
-		return ((int) size_s1 * 0);
-	}
+	res = strcmp(s1, s2);
+
+	return (res);
 
 
 }
