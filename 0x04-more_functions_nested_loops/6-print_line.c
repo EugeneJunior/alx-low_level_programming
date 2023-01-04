@@ -2,6 +2,7 @@
 
 /**
  * print_line - prints a line of length n to stdout
+ * @n: length of line to print
  *
  */
 void print_line(int n)
