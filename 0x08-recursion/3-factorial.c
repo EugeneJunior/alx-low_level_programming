@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * factorial - finds factorial of a given number
  * @n: input number
@@ -9,27 +10,17 @@
 int factorial(int n)
 {
 
-	int sum = 1;
-
-	int i;
-
+	if (n == 0)
+	{
+		return (1);
+	}
 	if (n < 0)
 	{
 		return (-1);
 	}
-	else
+	if (n > 0)
 	{
-		for (i = n; i > -1; i--)
-		{
-			if (i == 0)
-			{
-				i = 1;
-				break;
-			}
-			sum *= i;
-		}
-		sum *= i;
-		return (sum);
+		return (n * factorial(n - 1));
 	}
-
+	exit(0);
 }
