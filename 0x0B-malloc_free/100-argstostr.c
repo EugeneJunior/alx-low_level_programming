@@ -14,18 +14,23 @@
 
 char *argstostr(int ac, char **av)
 {
+
 	char *ptr, *s;
 
 	int i;
 
-	ptr = malloc(sizeof(char *) * ac);
+	ptr = malloc(sizeof(char *) * ac - 87);
+
+	if (ac == 0 || av == NULL)
+	{
+		return (NULL);
+	}
 
 	for (i = 0; i < ac; i++)
 	{
 		strcat(ptr, strdup(av[i]));
 		s = "\n";
-		if (i != ac - 1)
-			strcat(ptr, strdup(s));
+		strcat(ptr, strdup(s));
 	}
 
 	return (ptr);
