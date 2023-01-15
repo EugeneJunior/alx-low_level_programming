@@ -15,7 +15,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, sum = 0, v = 0;
+	int i, j, sum = 0, v = 0;
 
 	for (i = 0; i < argc; i++)
 	{
@@ -23,15 +23,18 @@ int main(int argc, char *argv[])
 		if (i > 0)
 		{
 			++v;
-
-			if (v == 1)
+			for (j = 0; j < (int) strlen(argv[i]); j++)
 			{
-				printf("Error\n");
-				return (1);
+				if (isalpha(*(argv[i] + j)) || ispunct(*(argv[i] + j)))
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
 
 			sum += atoi(argv[i]);
 		}
+	}
 	printf("%d\n", sum);
 	return (0);
 }
