@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 /**
  * sum_them_all - adds all its arguments
- * @n: start of arguments
+ * @n: number of arguments to add
  * @...: the remaining arguments
  *
  * Return: 0 if n == 0, otherwise sum
