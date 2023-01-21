@@ -29,9 +29,10 @@ void print_all(const char * const format, ...)
 			case 's':
 				k = va_arg(args, char *);
 				if (*k != *v)
+				{
 					printf("%s, ", k);
-				else
-					printf("(nil), ");
+					break; }
+				printf("(nil), ");
 				break;
 			case 'f':
 				printf("%f, ", va_arg(args, double));
@@ -53,9 +54,10 @@ void print_all(const char * const format, ...)
 			case 's':
 				k = va_arg(args, char *);
 				if (*k != *v)
+				{
 					printf("%s", k);
-				else
-					printf("(nil)");
+					break; }
+				printf("(nil)");
 				break;
 			case 'f':
 				printf("%f", va_arg(args, double));
