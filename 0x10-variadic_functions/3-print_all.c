@@ -38,7 +38,7 @@ void print_all(const char * const format, ...)
 				printf("%f, ", va_arg(args, double));
 				break;
 			case 'i':
-				printf("%d, ", va_arg(args, int));
+				printf("%ld, ", va_arg(args, long int));
 				break;
 			default:
 				break; }
@@ -63,7 +63,7 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(args, double));
 				break;
 			case 'i':
-				printf("%d ", va_arg(args, int));
+				printf("%ld ", va_arg(args, long int));
 				break;
 			default:
 				break; }
