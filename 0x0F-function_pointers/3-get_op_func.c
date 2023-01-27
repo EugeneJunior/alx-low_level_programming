@@ -4,7 +4,7 @@
  * @s: the operater entered by the user
  *
  * Return: return a suitable pointer to a function
- * if it matches a paticular operator, otherwise 
+ * if it matches a paticular operator, otherwise
  * returns NULL
  */
 
@@ -20,7 +20,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 
 	int i;
-	
+
 	i = 0;
 	while (ops[i].op)
 	{
